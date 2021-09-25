@@ -1,0 +1,36 @@
+## 任务一
+
+### 1.plantuml图
+
+#### 1）example的类图如下
+
+![](http://www.plantuml.com/plantuml/png/VLFTJZ8n4BtlK_Jo-qAM9_02ILP2Oi3mWoR6Y-xk28sbtVH7HUJTRNTQg4lYtdHwsZazSsPsP2pJrkq58LnQqA-i1dhF9Qi470drt-1TyOOQi0_ASCkL_FSVyRIds-ippnNW3HCEF7OYf1RCcC0SQOkKyln2snWQWjdXLcJ2rrjdqpvg2-m9MbhDvPPQXK7lfkUtwbPhTiY5fDUZcCGQLzIH5vKR4Iz5E722T7iwqSh9XYBZV5Psw-fnZkjE0z0kl9kl5nXCDoL2o-bJ3CfDEQC4HGKJDRt4sooky0w-6PKSZMMMroSwc2Ydcs1H5umF2oRVyjPetF_b7XRxmThCXLC-94kbVPZFY52i-PskTBz9OLO4atahngxoRYQwLA5l6yDDp6nzMiPTdREk57lWmZu1-4BUpA02KMftW16-X1ewsHxgUuefle1LokeF1kRtAXPSmjfhoei9Cy-q0RG2JpeI-8JQsVZBaF0Vq45Hd2UHf3cz-HuEXx7x9Cf6B7VpVE8fKF6586Sb8v2DsuiV)
+
+#### 2）对象时序图如下
+
+![](http://www.plantuml.com/plantuml/png/RPFDRjD0483l-nGhvG87Ng07LENI2uUA7o64EBZD95ZTsf6zLWKd9089SieFfQL442aIqAZGu80ehjs6b_5uVUCLM7lY28j4aRmxC_hsc_6QhRhISAItBPYnAMs7qq-O5kY7uV9hUbL9oVkm1l0Gd29TBcjrOMnkyKgbQpjIvuXpezpKrZsdBQ0itN5C7Syhwbwp2GuqRbEaTXqQynfXjmg4T4ohnMjtG0XxXp6Mk_4hTsjh3e1rxoelzYkSMRO4Bg0fLxXwCqx2nqbuZ8_EiVS1Ztpi7sJTO_mrLODEstPDQTgMc-u7AkumHktap7NJsj982cZefY44Ru6yMRP_wVA_vs0SgIy-PTGqng6lyVZjB9kE5WDZZ8OmLtwWyHGeyNLlOqC0nPRXysRYJ-dprnYzME3dKrxYNeMx89UIWwSBGStKWqXt9sdl9Ruw97BsqzUpIy9esp0jx5xeYYGymTv0_zE383SRTAXqcGEzCt8ehjMjzdy2H4sV7MMZlehtqk5xtFr1RMQ_ksfSpFBahVhwEGc_PwEn-XYHbOhV2RkLJGAys6UiUe5oYRhmG4jKhmH9Lujfb3WP9ZF_ptaVpqvr19-SqZ4weYtfc6osXzq8Uq5wEDCUZAs2rSW_7_ON)
+
+### 2.
+
+#### 1）设计理念：
+
+简而言之，设计理念就是“面向对象”，即考虑程序需要有哪些主体来完成哪些事情，建立这些主体的类并编写他们对应的操作，进行数据封装。对于一些不希望被访问到的方法或属性采取private访问控制，如Geezer的构造函数和parsePlan等。除此以外，对类型进行一定抽象，比如从interface到implement它的类这样，考虑一些接口，继承等可以抽象的地方，以实现代码更好的复用性和清晰的结构。
+
+#### 2）好处：
+
+- 模块化结构清晰，相比较面向过程式编程等，example这样的面向对象编程的每个模块由不同的类构成，不同的类有自己的属性与行为
+- 更好的对程序各部分进行抽象，只需要考虑每个类，控制复杂度
+- 对数据实现了封装，加强了数据的保护，比如example中的部分private变量以及内部类等，可以避免外界对其进行访问从而破坏结构
+- 代码复用性好，能更好地通用，比如example中的interface型的类，Sorter实现了较高的抽象，对此可以有很多类来implement它，包括BubbleSorter，这样之后也可以有别的排序算法来实现它
+- 可维护性好，当要对某个类进行功能添加删除或修改的时候，可以直接在类里面编程，不会影响到其他类。而且如果要扩展功能，比如需要更高效率的排序算法，直接新建一个类implement Sorter即可
+- 软件模型的自然度好，实现了问题到解决方案的自然过渡，实现了与问题空间很好的对应，令我们能够从贴合我们自身思维方式的角度来思考解决问题，而不是从计算机解决问题的角度。比如要排序我们就弄一个Sorter类排序，要把颜色排成一行，我们就可以用Line类来做这个事情。
+
+#### 3）可改进之处：
+
+- 类内的安排最好是数据成员、方法各放在一起，不要像Geezer里面，theGeezer和sorter分开，阅读上不太舒适。如果各放在一起，就可以一目了然，这个类有哪些属性，哪些方法
+- 对于log而言，如果一开始就是有序的排列，那么给log赋值的结果将为空字符串，会出现错误无法运行，需要加上一个边界条件判断，即lineUp函数执行的返回结果是否为空。
+
+### 任务二
+
+
+

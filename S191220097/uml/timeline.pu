@@ -1,0 +1,29 @@
+
+@startuml
+actor       line   as Line
+actor       theGeezer  as Geezer  #Black 
+actor       sorter    as Sorter   #Purple 
+actor writer as BufferedWriter #Red
+actor log as String #Yellow
+
+
+Line -[#Green]> Line : 
+note left: 用七个值初始化自己的positions数组
+
+Geezer -[#Pink]> Geezer : call getTheGeezer()
+note left: 建立Geezer类型的对象theGeezer
+
+Sorter -[#Grey]> Sorter : call BubbleSorter()
+note left: 建立用以排序的对象sorter 
+
+Geezer -[#Pink]> Sorter : call setSorter()
+note left: 将theGeezer的数据成员sorter赋值为main函数中刚刚新建的sorter
+
+Geezer -[#Pink]> String : call lineUp()
+note left: 将函数执行结果即排序过程的字符串表示赋值给log记录
+
+BufferedWriter -[#Blue]> : 
+note left: 新建BufferedWriter对象实例，并对其赋值，将记录输出到显示
+
+@enduml
+
