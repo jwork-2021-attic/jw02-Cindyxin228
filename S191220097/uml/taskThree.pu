@@ -24,25 +24,17 @@ class Position{
     
 }
 
-enum Gourd {
-    ONE
-    TWO
-    Three 
-    FOUR
-    FIVE 
-    SIX 
-    SEVEN 
-
+enum Monster {
     -int r 
     -int g 
     -int b
-
+    -int rank
     -Position position
+    +Monster[] monster
 
-    Gourd()
+    Monster()
+    {static} +void initialize()
     {static} +Gourd getGourdByRank()
-    +int rank()
-    @Override +String toString()
     +void swapPosition()
 }
 
@@ -59,22 +51,43 @@ class BubbleSorter{
 
 }
 
-class Geezer{
-    {static} -Geezer theGeezer
+class QuickSorter{
+    -int[] a
+    -String plan
+    +void swap()
+}
+
+class SelectSorter{
+    -int[] a
+    -String plan
+    +void swap()
+}
+
+class Snake{
+    {static} -Snake theSnake
     -Sorter sorter
 
-    {static} +Geezer getTheGeezer()
+    {static} +Snake getTheSnake()
     +void setSorter()
     +String lineUp()
     -String[] parsePlan()
     -void execute()
 }
 
+class Matrix{
+    -int colLength
+
+    Matrix()
+    @Override +String toString()
+}
 
 Line *-- Position
-Linable <|-- Gourd
+Linable <|-- Monster
 Sorter <|-- BubbleSorter
-Geezer o-- Sorter
-Gourd o-- Position
+Sorter <|-- SelectSorter
+Sorter <|-- QuickSorter
+Line <|-- Matrix
+Snake o-- Sorter
+Monster o-- Position
 
 @enduml

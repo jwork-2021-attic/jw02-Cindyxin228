@@ -4,7 +4,7 @@
 
 #### 1）example的类图如下
 
-![](http://www.plantuml.com/plantuml/png/VLFTJZ8n4BtlK_Jo-qAM9_02ILP2Oi3mWoR6Y-xk28sbtVH7HUJTRNTQg4lYtdHwsZazSsPsP2pJrkq58LnQqA-i1dhF9Qi470drt-1TyOOQi0_ASCkL_FSVyRIds-ippnNW3HCEF7OYf1RCcC0SQOkKyln2snWQWjdXLcJ2rrjdqpvg2-m9MbhDvPPQXK7lfkUtwbPhTiY5fDUZcCGQLzIH5vKR4Iz5E722T7iwqSh9XYBZV5Psw-fnZkjE0z0kl9kl5nXCDoL2o-bJ3CfDEQC4HGKJDRt4sooky0w-6PKSZMMMroSwc2Ydcs1H5umF2oRVyjPetF_b7XRxmThCXLC-94kbVPZFY52i-PskTBz9OLO4atahngxoRYQwLA5l6yDDp6nzMiPTdREk57lWmZu1-4BUpA02KMftW16-X1ewsHxgUuefle1LokeF1kRtAXPSmjfhoei9Cy-q0RG2JpeI-8JQsVZBaF0Vq45Hd2UHf3cz-HuEXx7x9Cf6B7VpVE8fKF6586Sb8v2DsuiV)
+![](http://www.plantuml.com/plantuml/png/TLFDJZ8n5DttARhyFicyWGia6Gc9OGm_Q69Sb9ahD9PsqXyKaNUtdTj26IERdfxfFJqzzp8qbcdhTe8GBYteDrO3VU2IhGKS2VM_mLxnXXgmZyfmovNyzn_vjAURtz-yLg1NJ3Zmt8cGMZ1ZWdAKBLB9oojj8pG4gyEfg8ItjywcVVGMr1CrjvhB3RKAGU-arxVgJcjso8saswEPf1fNzD5_L0eY7efqq0JfTdIid6ue2bRJibiNJnMkMmr0EtXVBMS89giIgVdaEO9oLKufGKyXGqqlU9FXDRaEyHnXnwELwEzeBBEyFj51nuRWEZ0wp9XypnkcB_jXjGUjUGD_fejXVB0sI-cK3z5SQG_p6HAADTVbIlUR66P9C9ctQkJMFkqaboBmRMMuYPMjB-jPyoeNcJ705mfacHJ8Khi5H2Y9btN-FDMF4KkyqqMgway8rlUU9hY4fVUKkmx3pxG1V3D-wKJW4sfd0NCWuGz1RuhYF98a3UpjTr5WkmbUYaoU6Oc6bUSZWvEWSa4o1DcudVW1)
 
 #### 2）对象时序图如下
 
@@ -30,7 +30,45 @@
 - 类内的安排最好是数据成员、方法各放在一起，不要像Geezer里面，theGeezer和sorter分开，阅读上不太舒适。如果各放在一起，就可以一目了然，这个类有哪些属性，哪些方法
 - 对于log而言，如果一开始就是有序的排列，那么给log赋值的结果将为空字符串，会出现错误无法运行，需要加上一个边界条件判断，即lineUp函数执行的返回结果是否为空。
 
-### 任务二
+## 任务二
 
+### 1.类图
 
+![](http://www.plantuml.com/plantuml/png/fLExKkim4Etr5IhlO_m7jyXDGmCpG826eL3i9MWYInuzW13oxwoiLR9sEd3ZrP7swEpHxY94vMFgZH3QHl3FgWLvgQrQ6zWBYT_VLwSx6I1Ukw2ZTlRNxuBNjToSxo5NXX-KIO3OGOZMg10oCz4sDUNnIGuK1b6oywd2HBSFATOrQSli5Lf5h-r6HbU2sKdaZ-w_zsh7XTJRIKnbfN_HmOlYHj0XWZCdsDJBAom07PH4cItmyXHlMBncHvJTJWqvsb5k9LeieozH4KSmYTY7gA9k3oHIMoHGHd_0sVw5IxxBxet1SdUBzqyBV5C3g_p06sFbF8QyBunJtJJT-Vd3vFumodBxbscD3bQwQWRMgCg2CWTCcqb3bXFDJTBjzfiiHv8L66ZZZrcisi9-QdOpWZA-m1WGtNYH3EDFp5wd9A1XTvGpxxsIFJFOQ0ltg8RhpMEbV83HUTePIU0TsXHfAaKUDVcdQOxDBkee_Fj4bBfCaEYCiRURRN0Z-GP_9b4gT8WIKCV6SH5Y0RPBlVa2)
+
+### 2.可视化结果展示链接
+
+选择排序
+
+<https://asciinema.org/a/1KzOy2lrPj2dZiypQTvVPyEMh>
+
+冒泡排序
+
+<https://asciinema.org/a/01kP3X3ZeMi8NxT7IA9aWfCfL>
+
+快速排序
+
+<https://asciinema.org/a/x95m5JFLydPh2RuCM167vb013>
+
+## 任务三
+
+### 1.类图
+
+![](http://www.plantuml.com/plantuml/png/fLExSXin3Epv5Ipp6Fr12iLD6dloK98camAwGsIEA5B30nqxYluze01QqAcBrGYt91QB9R2S20hLNNGk9CBo2mRqjo71EkB1UVwzVSXXz1FIfpm52ZczUYru__QRwpFcQl1tY1KPEpetH9YcngoqYvxouwVVQpWvoUPRd6MgxolrRzNMs3kqeXBInbEMO7QJ-Ic_BmMUh91UNSLqLlqN7ROfQuHUKhXnOgexVySD41QlbCs2ui_nniHhSmNIzjAGPpkagj9o6pk9H9p2Ak8m4L0OZYeo92Q06FxWrVc7NClOt3i5DqzVkFvbWxzXRpe_si5OvSAXdOkOORnCpsN-C6q-8YHh_qrTiuEMhfd1FO9yQEQUqsRIcELCyxc6OVjVB4RB2YCEz6AM15iyN9gzE86Uxl4K29qKQZxfMzhNaGGsxAlcp6TFicS6nv3m6wknUjjQGPbGd9UJ4ma-ub09hVOxu9H7CxT3ZhUODdGl-kHSMPOV7x2KCEBLuWbbMrx_Ph5uNX_Nb-lTNqPrRfqq8fYT1djWdcPsO1vU2ZPKTJenCJEWD_fcPglABJ6DTHV_0G00)
+
+### 2.可视化结果展示链接
+
+由于随机交换，位置错误的有多有少
+
+选择排序
+
+<https://asciinema.org/a/n1nWutumPjQZORmOlyq0Y6bE1>
+
+冒泡排序
+
+<https://asciinema.org/a/PUOstyFAFTiO9vmXXSp41syKy>
+
+快速排序
+
+<https://asciinema.org/a/TlsjMBXYZJttURdh8Eeb5au9R>
 

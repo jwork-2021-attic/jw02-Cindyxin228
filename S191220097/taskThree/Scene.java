@@ -1,4 +1,4 @@
-package S191220097.taskSecond;
+package S191220097.taskThree;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -9,7 +9,8 @@ public class Scene {
     public static void main(String[] args) throws IOException {
 
         final int num = 64;
-        Line line = new Line(num);
+        // Line line = new Line(num);
+        Line line = new Matrix(64, 8);
         Monster.initialize(num);
         for (int i = 0; i < num; i++) {
             line.put(Monster.monster[i], i);
